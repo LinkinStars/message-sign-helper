@@ -15,19 +15,18 @@
 4. 使用大写32位md5获得签名
 
 ## 签名举例：  
-一、需要传递的参数如下： 
+一、需要传递的参数如下：   
 "name" : "xxx"  
 "age" : "2"  
 "username" : "admin"  
 "test" : ""  
 
-二、经过1.2两步之后得到的字符串为：  
-age=2&name=xxx&username=admin  
+二、经过1.2两步之后得到的字符串为： age=2&name=xxx&username=admin  
 
-三、经过第三步
+三、经过第三步：
 age=2&name=xxx&username=admin&key=XXX
 
-四、经过第四部
+四、经过第四部：
 sign = MD5(age=2&name=xxx&username=admin&key=XXX)
 
 五、最后传输的json为：
