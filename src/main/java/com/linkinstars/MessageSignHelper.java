@@ -12,7 +12,7 @@ import java.util.TreeMap;
  * 消息签名
  * @author LinkinStar
  */
-public class SignMessageHelper {
+public class MessageSignHelper {
     
     /**
      * 签名

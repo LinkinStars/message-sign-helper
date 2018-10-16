@@ -18,10 +18,10 @@ public class Test {
         map.put("age", "2");
         map.put("test", "");
         
-        JSONObject jsonObject = SignMessageHelper.sign(map, paramKey);
+        JSONObject jsonObject = MessageSignHelper.sign(map, paramKey);
         System.out.println(jsonObject);
         
-        boolean result = SignMessageHelper.inspect(jsonObject, paramKey);
+        boolean result = MessageSignHelper.inspect(jsonObject, paramKey);
         System.out.println(result);
     }
 }
